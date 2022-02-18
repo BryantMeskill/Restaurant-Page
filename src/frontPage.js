@@ -4,11 +4,12 @@ export default function renderMain() {
   const mainImage = document.createElement("img");
   const desc = document.createElement("p");
 
+  mainImage.classList.add("front-pic");
   section.classList.add("section");
   title.classList.add("title");
   desc.classList.add("desc");
 
-  mainImage.src = "../src/chickenandrice.jpg";
+  mainImage.src = "../src/spread.jpg";
   mainImage.alt = "A dish of chicken and rice.";
 
   title.textContent = "Tres Amigos Mexican Restaraunt";
