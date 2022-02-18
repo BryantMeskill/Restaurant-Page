@@ -1,17 +1,16 @@
 export default function renderFooter() {
   const footer = document.createElement("div");
-  const copyright = document.createElement("div");
+  const image = document.createElement("img");
   const userLink = document.createElement("a");
 
   footer.classList.add("footer");
-  copyright.classList.add("copyright");
   userLink.classList.add("user-link");
 
-  copyright.textContent = "Created by";
-  userLink.textContent = "Bryant Meskill";
-  userLink.href = "www.github.com/BryantMeskill";
+  image.src = "../src/github.png";
+  image.alt = "Bryant Meskill's GitHub";
+  userLink.href = "https://www.github.com/BryantMeskill";
 
-  footer.appendChild(copyright);
+  userLink.appendChild(image);
   footer.appendChild(userLink);
 
   return footer;
