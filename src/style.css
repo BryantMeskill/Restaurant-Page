@@ -2,11 +2,61 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Medium.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./BebasNeue-Regular.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 500px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: 500px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 body {
-  background-color: rgb(191, 192, 170);
+  background-color: rgb(199, 201, 189);
+  margin: 0;
 }
 
 .content {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,18 +64,79 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: solid 3px black;
+  padding: 0px 50px;
+  margin-bottom: 50px;
+  background: url("./headerstyle2.png");
+}
+
+button {
+  font-family: "roboto";
+  font-size: 25px;
+  margin: 0px 20px;
+  padding: 15px;
+  border: solid 1px aliceblue;
+  border-radius: 10px;
+  color: aliceblue;
+  transition: 0.2s;
+}
+
+button:hover {
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+button:active {
+  background-color: white;
+  font-size: 35px;
+  transition: 0.2s;
+}
+
+.home {
+  background-color: #b7498e;
+}
+
+.menu {
+  background-color: #007e91;
+}
+
+.contact {
+  background-color: #ff9100;
+}
+
+.title {
+  font-family: "bebas neue", cursive;
+  font-size: 45px;
+  color: rgb(0, 0, 0);
+  animation: slide-up 1s;
+  animation-fill-mode: forwards;
+}
+
+p {
+  font-family: "roboto", sans-serif;
+  font-size: 30px;
+  animation: slide-up 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .footer {
   display: flex;
+  font-size: 24px;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  color: aliceblue;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 }
 
 .hours-list {
   list-style: none;
+}
+
+.front-pic {
+  opacity: 0;
+  /* both allows the image to be invisible before animation
+    and also keeps it visible after animation (set class opacity to 0!) */
+  animation: slide-in 3s ease 0.8s both;
+  margin-bottom: 50px;
 }
