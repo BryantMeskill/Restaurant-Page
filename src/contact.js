@@ -1,7 +1,7 @@
 export default function renderContact() {
   const section = document.createElement("div");
-  const contactTitle = document.createElement("h1");
-  const contactPara = document.createElement("p");
+  const title = document.createElement("h1");
+  const desc = document.createElement("p");
   const image = document.createElement("img");
   const hoursList = document.createElement("ol");
   const days = [
@@ -19,16 +19,18 @@ export default function renderContact() {
   //image.alt = "A map of store location";
 
   hoursList.classList.add("hours-list");
+  section.classList.add("section");
+  title.classList.add("title");
 
-  contactTitle.textContent = "Contact Us";
-  contactPara.textContent =
+  title.textContent = "Contact Us";
+  desc.textContent =
     "Thanks for considering us for your lunch and dinner needs! Below you will\r\n";
-  contactPara.textContent +=
+  desc.textContent +=
     "find our phone number and address, as well as our business hours. Walk-ins\r\n";
-  contactPara.textContent +=
+  desc.textContent +=
     "are always welcome, you may also order by phone. Hope to see you soon!";
 
-  contactPara.setAttribute("style", "white-space: pre;");
+  desc.setAttribute("style", "white-space: pre;");
 
   //create list element for each day and append to parent ol
   days.forEach((day) => {
@@ -37,8 +39,8 @@ export default function renderContact() {
     hoursList.appendChild(li);
   });
 
-  section.appendChild(contactTitle);
-  section.appendChild(contactPara);
+  section.appendChild(title);
+  section.appendChild(desc);
   section.appendChild(hoursList);
 
   return section;
