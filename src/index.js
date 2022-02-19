@@ -10,33 +10,29 @@ content.appendChild(renderHeader());
 content.appendChild(renderMain());
 content.appendChild(renderFooter());
 
+const handleClick = (renderContentCallback) => {
+  content.innerHTML = "";
+  content.appendChild(renderHeader());
+  content.appendChild(renderContentCallback());
+  content.appendChild(renderFooter());
+  render();
+};
+
 function render() {
   const homeBtn = document.querySelector(".home");
   const menuBtn = document.querySelector(".menu");
   const contactBtn = document.querySelector(".contact");
 
   homeBtn.addEventListener("click", () => {
-    content.innerHTML = "";
-    content.appendChild(renderHeader());
-    content.appendChild(renderMain());
-    content.appendChild(renderFooter());
-    render();
+    handleClick(renderMain);
   });
 
   menuBtn.addEventListener("click", () => {
-    content.innerHTML = "";
-    content.appendChild(renderHeader());
-    content.appendChild(renderMenu());
-    content.appendChild(renderFooter());
-    render();
+    handleClick(renderMenu);
   });
 
   contactBtn.addEventListener("click", () => {
-    content.innerHTML = "";
-    content.appendChild(renderHeader());
-    content.appendChild(renderContact());
-    content.appendChild(renderFooter());
-    render();
+    handleClick(renderContact);
   });
 }
 
