@@ -1,6 +1,6 @@
 export default function renderContact() {
   const section = document.createElement("div");
-  const title = document.createElement("h1");
+  const subtitle = document.createElement("h1");
   const desc = document.createElement("p");
   const image = document.createElement("img");
   const hoursList = document.createElement("ol");
@@ -20,9 +20,10 @@ export default function renderContact() {
 
   hoursList.classList.add("hours-list");
   section.classList.add("section");
-  title.classList.add("title");
+  subtitle.classList.add("subtitle");
 
-  title.textContent = "Contact Us";
+  //TODO: SWITCH TO INNERHTML AND USE BREAK TAGS
+  subtitle.textContent = "Contact Us";
   desc.textContent =
     "Thanks for considering us for your lunch and dinner needs! Below you will\r\n";
   desc.textContent +=
@@ -39,7 +40,7 @@ export default function renderContact() {
     hoursList.appendChild(li);
   });
 
-  section.appendChild(title);
+  section.appendChild(subtitle);
   section.appendChild(desc);
   section.appendChild(hoursList);
 
