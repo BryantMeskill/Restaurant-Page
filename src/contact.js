@@ -4,6 +4,7 @@ export default function renderContact() {
   const desc = document.createElement("p");
   const image = document.createElement("img");
   const hoursList = document.createElement("ol");
+
   const days = [
     "Monday 12-8",
     "Tuesday 12-8",
@@ -22,16 +23,9 @@ export default function renderContact() {
   section.classList.add("section");
   subtitle.classList.add("subtitle");
 
-  //TODO: SWITCH TO INNERHTML AND USE BREAK TAGS
   subtitle.textContent = "Contact Us";
-  desc.textContent =
-    "Thanks for considering us for your lunch and dinner needs! Below you will\r\n";
-  desc.textContent +=
-    "find our phone number and address, as well as our business hours. Walk-ins\r\n";
-  desc.textContent +=
-    "are always welcome, you may also order by phone. Hope to see you soon!";
-
-  desc.setAttribute("style", "white-space: pre;");
+  desc.innerHTML =
+    "Thanks for considering us for your lunch and dinner needs! Below you will<br>find our phone number and address, as well as our business hours. Walk-ins<br>are always welcome, you may also order by phone. Hope to see you soon!";
 
   //create list element for each day and append to parent ol
   days.forEach((day) => {
