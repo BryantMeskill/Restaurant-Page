@@ -64,9 +64,9 @@ export default function renderMenu() {
   desc.textContent =
     "Some items are subject to availability of fresh local ingredients.";
 
-  image.src = "../dist/img/chickenandrice.jpg";
+  image.src = "../src/assets/img/chickenandrice.jpg";
   image.alt = "Dish of Chicken and Rice";
-  imageTwo.src = "../dist/img/streettacos.jpg";
+  imageTwo.src = "../src/assets/img/streettacos.jpg";
   imageTwo.alt = "Dish of tacos";
 
   menu.appendChild(beefMenu);

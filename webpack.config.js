@@ -2,11 +2,6 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  plugins: [
-    new CopyPlugin({
-      patterns: [{ from: "../rp/src/assets/img", to: "../dist" }],
-    }),
-  ],
   mode: "development",
   entry: "./src/index.js",
   output: {

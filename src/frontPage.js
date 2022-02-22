@@ -6,13 +6,11 @@ export default function renderMain() {
 
   mainImage.classList.add("img");
   section.classList.add("section");
-  //title.classList.add("title");
   desc.classList.add("desc");
 
-  mainImage.src = "../dist/img/spread.jpg";
+  mainImage.src = "../src/assets/img/spread.jpg";
   mainImage.alt = "A dish of chicken and rice.";
 
-  //title.textContent = "Tres Amigos Mexican Restaraunt";
   desc.textContent =
     "Welcome to Tres Amigos Mexican restaraunt. We've been serving the\n";
   desc.textContent +=
@@ -27,7 +25,6 @@ export default function renderMain() {
   //setting this css style allows new line in textContent
   desc.setAttribute("style", "white-space: pre;");
 
-  //section.appendChild(title);
   section.appendChild(mainImage);
   section.appendChild(desc);
 
