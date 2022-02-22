@@ -80,7 +80,7 @@ body {
 }
 
 button {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 25px;
   margin: 10px 20px 20px;
   padding: 15px;
@@ -154,10 +154,6 @@ p {
   bottom: 0;
 }
 
-.hours-list {
-  list-style: none;
-}
-
 .img {
   opacity: 0;
   /* both allows the image to be invisible before animation
@@ -180,7 +176,8 @@ p {
 
 .menu-desc {
   background-color: #b7498e;
-  padding: 75px;
+  padding: 45px;
+  margin: 0px;
 }
 
 ul {
@@ -189,13 +186,34 @@ ul {
 }
 
 .menu-list {
+  font-family: "roboto", sans-serif;
   background-color: #007e91;
-  border-radius: 10px;
   color: white;
   font-size: 25px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 3px #b7498e;
+  border: solid 3px white;
   animation: slide-up 1.6s ease;
+}
+
+.contact-desc {
+  font-family: "roboto", sans-serif;
+  background-color: #b7498e;
+  margin: 0;
+  padding: 35px;
+}
+
+.info {
+  font-family: "roboto", sans-serif;
+  border: solid 3px white;
+  background-color: #007e91;
+  padding: 60px;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 30px;
+  animation: slide-up 1.5s;
+  animation-fill-mode: forwards;
+  list-style: none;
 }
