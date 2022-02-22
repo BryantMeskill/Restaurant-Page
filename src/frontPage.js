@@ -9,7 +9,7 @@ export default function renderMain() {
   //title.classList.add("title");
   desc.classList.add("desc");
 
-  mainImage.src = "../src/assets/img/spread.jpg";
+  mainImage.src = "../dist/img/spread.jpg";
   mainImage.alt = "A dish of chicken and rice.";
 
   //title.textContent = "Tres Amigos Mexican Restaraunt";
