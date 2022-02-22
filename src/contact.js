@@ -3,9 +3,11 @@ export default function renderContact() {
   const subtitle = document.createElement("h1");
   const desc = document.createElement("p");
   const image = document.createElement("img");
-  const hoursList = document.createElement("ol");
+  const address = document.createElement("div");
+  const info = document.createElement("ol");
 
   const days = [
+    "HOURS",
     "Monday 12-8",
     "Tuesday 12-8",
     "Wednesday 12-8",
@@ -15,28 +17,29 @@ export default function renderContact() {
     "Sunday 11-7",
   ];
 
-  //TODO
-  //image.src = "../src/map.jpg";
-  //image.alt = "A map of store location";
+  image.src = "../src/assets/img/map.png";
+  image.alt = "A map of store location";
 
-  hoursList.classList.add("hours-list");
+  desc.classList.add("contact-desc");
+  image.classList.add("img");
+  info.classList.add("info");
   section.classList.add("section");
   subtitle.classList.add("subtitle");
 
   subtitle.textContent = "Contact Us";
-  desc.innerHTML =
-    "Thanks for considering us for your lunch and dinner needs! Below you will<br>find our phone number and address, as well as our business hours. Walk-ins<br>are always welcome, you may also order by phone. Hope to see you soon!";
+  desc.innerHTML = "6957 Santa Fe Ave SE, Albuquerque, NM<br>📞(123)456-7890";
 
   //create list element for each day and append to parent ol
   days.forEach((day) => {
     let li = document.createElement("li");
     li.innerText = day;
-    hoursList.appendChild(li);
+    info.appendChild(li);
   });
 
   section.appendChild(subtitle);
+  section.appendChild(image);
   section.appendChild(desc);
-  section.appendChild(hoursList);
+  section.appendChild(info);
 
   return section;
 }
