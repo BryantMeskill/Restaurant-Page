@@ -1,4 +1,10 @@
 import "./style.css";
+import "./assets/img/chickenandrice.jpg";
+import "./assets/img/github.png";
+import "./assets/img/headerstyle.png";
+import "./assets/img/map.png";
+import "./assets/img/spread.jpg";
+import "./assets/img/streettacos.jpg";
 import renderHeader from "./header";
 import renderFooter from "./footer";
 import renderMain from "./frontPage";
