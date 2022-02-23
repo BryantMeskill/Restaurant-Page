@@ -17,7 +17,7 @@ export default function renderContact() {
     "Sunday 11-7",
   ];
 
-  image.src = "../src/assets/img/map.png";
+  image.src = "../dist/a0f8a4358407b9aa07cd.png";
   image.alt = "A map of store location";
 
   desc.classList.add("contact-desc");
