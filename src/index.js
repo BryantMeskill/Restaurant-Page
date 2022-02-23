@@ -1,10 +1,4 @@
 import "./style.css";
-import menuImageOne from "./assets/img/chickenandrice.jpg";
-import menuImageTwo from "./assets/img/streettacos.jpg";
-import footerImage from "./assets/img/github.png";
-import headerImage from "./assets/img/headerstyle.png";
-import mapImage from "./assets/img/map.png";
-import mainImage from "./assets/img/spread.jpg";
 import renderHeader from "./header";
 import renderFooter from "./footer";
 import renderMain from "./frontPage";
