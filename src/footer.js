@@ -6,7 +6,7 @@ export default function renderFooter() {
   footer.classList.add("footer");
   userLink.classList.add("user-link");
 
-  image.src = "../src/assets/img/github.png";
+  image.src = "266ca63177bca6f330a7.png";
   image.alt = "Bryant Meskill's GitHub";
   userLink.href = "https://www.github.com/BryantMeskill";
 
