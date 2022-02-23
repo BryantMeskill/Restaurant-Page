@@ -1,3 +1,6 @@
+import menuImageOne from "./assets/img/chickenandrice.jpg";
+import menuImageTwo from "./assets/img/streettacos.jpg";
+
 export default function renderMenu() {
   const section = document.createElement("div");
   const subtitle = document.createElement("h1");
@@ -64,9 +67,9 @@ export default function renderMenu() {
   desc.textContent =
     "Some items are subject to availability of fresh local ingredients.";
 
-  image.src = "34cf90e00bbacf8ada4c.jpg";
+  image.src = menuImageOne;
   image.alt = "Dish of Chicken and Rice";
-  imageTwo.src = "32f6edc86281c98dccd9.jpg";
+  imageTwo.src = menuImageTwo;
   imageTwo.alt = "Dish of tacos";
 
   menu.appendChild(beefMenu);

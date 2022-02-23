@@ -1,3 +1,5 @@
+import footerImg from "./assets/img/github.png";
+
 export default function renderFooter() {
   const footer = document.createElement("div");
   const image = document.createElement("img");
@@ -6,7 +8,7 @@ export default function renderFooter() {
   footer.classList.add("footer");
   userLink.classList.add("user-link");
 
-  image.src = "266ca63177bca6f330a7.png";
+  image.src = footerImg;
   image.alt = "Bryant Meskill's GitHub";
   userLink.href = "https://www.github.com/BryantMeskill";
 

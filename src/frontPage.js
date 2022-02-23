@@ -1,4 +1,5 @@
 import mainDishImg from "./assets/img/spread.jpg";
+
 export default function renderMain() {
   const section = document.createElement("div");
   const title = document.createElement("h1");

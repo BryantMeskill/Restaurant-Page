@@ -1,3 +1,5 @@
+import mapImage from "./assets/img/map.png";
+
 export default function renderContact() {
   const section = document.createElement("div");
   const subtitle = document.createElement("h1");
@@ -17,7 +19,7 @@ export default function renderContact() {
     "Sunday 11-7",
   ];
 
-  image.src = "a0f8a4358407b9aa07cd.png";
+  image.src = mapImage;
   image.alt = "A map of store location";
 
   desc.classList.add("contact-desc");
