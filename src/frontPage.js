@@ -11,16 +11,8 @@ export default function renderMain() {
   mainImage.src = "../src/assets/img/spread.jpg";
   mainImage.alt = "A dish of chicken and rice.";
 
-  desc.textContent =
-    "Welcome to Tres Amigos Mexican restaraunt. We've been serving the\n";
-  desc.textContent +=
-    "local community delicious, authentic Mexican cuisine for over 40 years.\n";
-  desc.textContent +=
-    "We take pride in every customer served, and look forward to seeing you\n";
-  desc.textContent +=
-    "and your family for many more years to come. Thanks for your continued\n";
-  desc.textContent +=
-    "patronage! Check the menu and call us if you have any questions.";
+  desc.innerHTML =
+    "Welcome to Tres Amigos Mexican restaraunt. We've been serving the<br>local community delicious, authentic Mexican cuisine for over 40 years.<br>We take pride in every customer served, and look forward to seeing you<br>and your family for many more years to come. Thanks for your continued<br>patronage! Check the menu and call us if you have any questions.";
 
   //setting this css style allows new line in textContent
   desc.setAttribute("style", "white-space: pre;");
