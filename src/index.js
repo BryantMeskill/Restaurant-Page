@@ -1,10 +1,10 @@
 import "./style.css";
-import "./assets/img/chickenandrice.jpg";
-import "./assets/img/github.png";
-import "./assets/img/headerstyle.png";
-import "./assets/img/map.png";
-import "./assets/img/spread.jpg";
-import "./assets/img/streettacos.jpg";
+import menuImageOne from "./assets/img/chickenandrice.jpg";
+import menuImageTwo from "./assets/img/streettacos.jpg";
+import footerImage from "./assets/img/github.png";
+import headerImage from "./assets/img/headerstyle.png";
+import mapImage from "./assets/img/map.png";
+import mainImage from "./assets/img/spread.jpg";
 import renderHeader from "./header";
 import renderFooter from "./footer";
 import renderMain from "./frontPage";

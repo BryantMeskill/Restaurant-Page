@@ -8,7 +8,7 @@ export default function renderMain() {
   section.classList.add("section");
   desc.classList.add("desc");
 
-  mainImage.src = "../dist/d248d26897f3f67b219e.jpg";
+  mainImage.src = "../src/assets/img/spread.jpg";
   mainImage.alt = "A dish of chicken and rice.";
 
   desc.innerHTML =
