@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+/* Keeps the scrollbar from moving page upon animation completion */
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
 
 @font-face {
   font-family: "Roboto";
@@ -158,7 +163,7 @@ p {
   opacity: 0;
   /* both allows the image to be invisible before animation
     and also keeps it visible after animation (set class opacity to 0!) */
-  animation: slide-in 3s ease 0.8s both;
+  animation: slide-in 3s ease 0.8s forwards;
   background-color: #ff9100;
 }
 
