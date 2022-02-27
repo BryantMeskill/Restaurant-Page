@@ -1,4 +1,5 @@
 const path = require("path");
+//Copies individual files or entire directories to the build directory.
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
