@@ -1,6 +1,6 @@
 # Restaurant Page
 
-Restaraunt website built using CSS, HTML and JavaScript, and bundled via Webpack.
+Restaurant website built using CSS, HTML and JavaScript, and bundled via Webpack.
 A live demo of the website can be viewed [here](https://bryantmeskill.github.io/RestaurantPage/).
 
 ![Gif of front webpage](https://github.com/BryantMeskill/RestaurantPage/blob/main/src/assets/gif/frontpage.gif)
