@@ -17,4 +17,4 @@ This project was made with inspiration from [The Odin Project](https://www.theod
 ![Gif of menu selection](https://github.com/BryantMeskill/RestaurantPage/blob/main/src/assets/gif/menuselection.gif)
 
 
-I really enjoyed this project and took my time to ensure the code was clean and well organized. I had fun and learned a lot about wepback and modularizing my code. I find it far more enjoyable and the cleanliness really helps keep things organized. Wepback is also great for bundling all the necessary files into one place and makes deploying and pathing issues a lot easier to deal with.
+I really enjoyed this project and took my time to ensure the code was clean and well organized. I learned a lot about wepback and modularizing my code. I find it far more enjoyable and the cleanliness really helps keep things organized. Wepback is also great for bundling all the necessary files into one place and makes deploying and pathing issues a lot easier to deal with. I also made the button backdrop banner myself in Photoshop for this project.
