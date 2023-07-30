@@ -7,7 +7,7 @@ export default function renderHeader() {
   const menuBtn = document.createElement("button");
   const contactBtn = document.createElement("button");
 
-  title.textContent = "Tres Amigos Mexican Restaraunt";
+  title.textContent = "Tres Amigos Mexican Restaurant";
   homeBtn.textContent = "Home";
   menuBtn.textContent = "Menu";
   contactBtn.textContent = "Contact";
